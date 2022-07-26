@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Build 2.0</title>
-<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
-<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
-<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="assets/css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <title>Punch</title>
+  <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 
   <body>
@@ -38,10 +38,10 @@
       <div class="header__setting">
         <div class="header__icons">
           <a href="">
-            <img class="icon" src="assets/img/icons/notification.svg" alt="" />
+            <i class="icon-user-solid"></i>
           </a>
           <a href="">
-            <img class="icon" src="assets/img/icons/user.svg" alt="" />
+            <span class="icon-user-solid"></span>
           </a>
         </div>
         <div class="header__btns">
@@ -60,13 +60,41 @@
   </div>
 </header>
 
-    <main>
+    <main class="main-page">
       <div class="page-wrapper">
+        <section class="mainSlider">
+          <div class="mainSlider__wrapper">
+            <div class="mainSlider-item">
+              <div class="mainSlider-item__wrapper">
+                <img
+                  src="assets/img/tournaments/tournament.png"
+                  class="mainSlider-item__img"
+                  alt=""
+                />
+                <p class="mainSlider-item__optional">Optional Provider Name</p>
+                <div class="mainSlider-item__content">
+                  <p class="mainSlider-item__name">Tournament Name</p>
+                  <p class="mainSlider-item__text">Tournament Prize</p>
+                  <p class="mainSlider-item__date">15 June - 26 July</p>
+                </div>
+                <div class="mainSlider-item__btns">
+                  <a href="" class="btn btn_green">Participate</a
+                  ><a href="" class="btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="navBar">
   <div class="container">
     <div class="navBar__wrapper">
       <div class="navBar__search">
-        <button class="btn btn_green">Search <i class="icon-search"></i></button>
+        <button class="btn btn_green">
+          Search <i class="icon-magnifying-glass-solid"></i>
+        </button>
+      </div>
+      <div class="navBar__favorite">
+        <i class="icon-star-regular"></i>
       </div>
       <ul class="navBar__list">
         <li><a href="">Slots</a></li>
@@ -80,7 +108,6 @@
           <a href=""><i class="icon-elips"></i>Рулетка</a>
         </li>
         <li><a href="">Poker</a></li>
-        <li><a href="">Favorite</a></li>
         <li><a href="">Previous games</a></li>
       </ul>
     </div>
@@ -98,12 +125,12 @@
           <a href="">Смотреть всех провайдеров</a>
           <div class="block__btns">
             <div class="block-btns__btn block-btns__prev">
-              <img src="assets/img/icons/arrow_blue.svg" alt="" />
+              <i class="icon-chevron-left-solid"></i>
             </div>
             <div
               class="block-btns__btn block-btns__next block-btns__btn_disabled"
             >
-              <img src="assets/img/icons/arrow_blue.svg" alt="" />
+            <i class="icon-chevron-left-solid"></i>
             </div>
           </div>
         </div>
@@ -144,7 +171,7 @@
             ><img src="assets/img/providers/providers_5.svg" alt="" />Gamomat</a
           >
         </div>
-        <div class="providers__item">
+        <div class="providers__item provider_active">
           <a href=""
             ><img
               src="assets/img/providers/providers_6.svg"
@@ -168,9 +195,697 @@
         </div>
       </div>
     </div>
+    <div class="allProvider allProvider_active">
+      <div class="allProveders__wrapper">
+        <div class="allProvider__search">
+          <div class="input-group">
+            <i class="icon-magnifying-glass-solid"></i>
+            <input type="text" placeholder="Search providers" />
+            <i class="icon-circle-xmark-solid"></i>
+          </div>
+        </div>
+        <div class="allProviders__content">
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="allProviders-item allProviders-item_active">
+            <div class="allProviders-item__wrapper">
+              <div class="allProviders-item__img">
+                <img src="assets/img/providers/providers_6.svg" alt="" />
+              </div>
+              <div class="allProviders-item__name">
+                <p>Provider</p>
+              </div>
+              <div class="allProviders-item__count">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
 
         <section class="games">
           <div class="container">
@@ -183,27 +898,324 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -220,12 +1232,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -233,27 +1245,218 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -270,12 +1473,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -283,27 +1486,217 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                  <a href="" class="card__link"></a>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                  <a href="" class="card__link"></a>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -320,12 +1713,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -333,27 +1726,314 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,12 +2050,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -383,27 +2063,314 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -420,12 +2387,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -433,27 +2400,314 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -473,12 +2727,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -486,27 +2740,314 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -526,12 +3067,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -539,27 +3080,418 @@
               <div class="games-slider">
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
                 </div>
-                <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
-                </div>
+
                 <div class="card">
                   <img src="assets/img/games/game1.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game2.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
                 </div>
+
                 <div class="card">
-                  <img src="assets/img/games/game3.jpg" alt="" />
-                  <div class="card__hover"></div>
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_new">
+                    <p>New</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_top">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite">
+                    <i class="icon-star-regular"></i>
+                  </div>
+                  <div class="card__label card__label_jacpot">
+                    <p>jacpot</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="assets/img/games/game1.jpg" alt="" />
+                  <div class="card__hover">
+                    <div class="card-hover__btns">
+                      <div class="card-hover__play">
+                        <a href="" class="btn">Play</a>
+                      </div>
+                      <div class="card-hover__demo">
+                        <a href="" class="">Demo</a>
+                      </div>
+                    </div>
+                    <div class="card-hover__name">
+                      <p>Название слота</p>
+                      <p>Provider</p>
+                    </div>
+                  </div>
+                  <div class="card-hover__favorite card-hover__favorite_fill">
+                    <i class="icon-star-solid"></i>
+                  </div>
+                  <div class="card__label card__label_live">
+                    <p>Live</p>
+                  </div>
+                </div>
+
+                <div class="card card__all">
+                  <div class="card__wrapper">
+                    <p>Все игры:</p>
+                    <p class="card-all__total">100+</p>
+                    <a href="" class="btn">See all</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -580,12 +3512,12 @@
                   <a href="">Смотреть всех провайдеров</a>
                   <div class="block__btns">
                     <div class="block-btns__btn block-btns__prev">
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                     <div
                       class="block-btns__btn block-btns__next block-btns__btn_disabled"
                     >
-                      <img src="assets/img/icons/arrow_blue.svg" alt="" />
+                      <i class="icon-chevron-left-solid"></i>
                     </div>
                   </div>
                 </div>
@@ -635,7 +3567,7 @@
                 <div class="bonuses__item">
                   <div class="bonuses-item__wrapper">
                     <img
-                      src="assets/img/bonuses/bonus.png"
+                      src="assets/img/jpg/evoplay_summer_slider.jpg"
                       class="bonuses-item__img"
                       alt=""
                     />
@@ -654,7 +3586,7 @@
                 <div class="bonuses__item">
                   <div class="bonuses-item__wrapper">
                     <img
-                      src="assets/img/bonuses/bonus.png"
+                      src="assets/img/jpg/booongo_hunt_slider.jpg"
                       class="bonuses-item__img"
                       alt=""
                     />
@@ -711,45 +3643,6 @@
         </section>
       </div>
     </main>
-    <div class="cookies">
-  <div class="container">
-    <div class="cookies__wrapper">
-      <div class="cookies-freeSpins">
-          <img src="assets/img/png/men-cookie.png" class="cookie-img" alt="">
-        <p>Join and get up to <span>1 000 € + 100 free spins</span></p>
-        <a href="" class="btn btn_green">Join!</a>
-        <div class="cookie-close">
-          <div class="cookie-close__wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <path
-                fill="#aa00ff"
-                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="cookie-block">
-        <p>
-          We use cookies, check <a href="">Privacy Policy</a> for more
-          information.
-        </p>
-        <button class="btn">Done</button>
-        <div class="cookie-close">
-          <div class="cookie-close__wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <path
-                fill="#ffffff"
-                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
     <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
